@@ -128,6 +128,8 @@ header.bg-header {
   color: #fff
 }
 
+.accordion h2 button { text-transform: uppercase; font-weight: 500; color: #117cd8 }
+
 
 #footer .link-social{
   color: #117cd8;
