@@ -1,0 +1,456 @@
+@import url('../../res/css/navegacao-portais.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+@import url('http://fonts.googleapis.com/css?family=Cabin:400,500,700');
+@import url('../fonts/gotham/gotham.css');
+
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  color: #333333;
+  font-size: 16px;
+  background: #fff;
+  font-family: Source Sans Pro, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Gotham, Cabin, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #117cd8;
+}
+
+ 
+.lead {
+font-size: 1.5rem;
+font-weight: 400;
+}
+
+.fixed-top {
+  margin-top: 30px;
+}
+
+.rounded {
+  border-radius: 1.25rem!important;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/*FORMS*/
+.form-control, 
+.btn { border-radius:0 }
+ 
+.btn-primary {
+  background-color: #DB081A;
+  border-color: #DB081A;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #c20717 !important;
+  border-color: #aa0614 !important;
+}
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #DB081A;
+  border-color: #DB081A;
+}
+
+label.error { color: #FF0000; }
+
+#mensagem_sucesso {
+  display: none; 
+}
+
+ 
+.badge-primary  { 
+  color: #ffffff; 
+  background-color: #DB081A; 
+  border-color: #DB081A; 
+}
+
+
+
+header {
+  height: 250px;
+  margin-top: 20px;
+  border-top: 10px solid #cc0000;
+  border-bottom: 10px solid #cc0000;
+}
+
+header.bg-header {
+  background: url(../images/bg-graficos-topo.jpg) no-repeat top center;
+  background-size: cover; 
+}
+
+
+/* NAVITEM SOCIAL MEDIA
+-------------------------------------------------- */
+.social-media {
+  padding: 0;
+  margin:0;
+  width: auto; 
+}
+.social-item {
+  display: inline-block !important; 
+}
+.link-social{
+  width: 35px;
+  height: 35px;
+  color: #ffffff;
+  font-size:1.2rem;
+  text-align: center;
+  padding: 2px 0 0 1px  !important;
+  margin: 0 5px 5px 0;
+  border-radius: 30px;  
+  background: #666;
+}
+
+.link-social:hover, #footer .link-social:hover{
+  background: #117cd8;
+  color: #fff
+}
+
+
+#footer .link-social{
+  color: #117cd8;
+  background: #fff;
+}
+
+
+
+
+/*SERVIÇO*/
+#servico a{ color: inherit; text-decoration: none; }
+
+
+#servico .card-header {
+  font-weight: 400;
+  background-color: #5197e9;
+}
+
+#servico .card-header h5 {
+  color: #ffffff !important;
+}
+
+#servico .card {
+  background-color: #3665a3;
+}
+#servico .card img {
+  margin: 0 auto;
+}
+
+#servico .card-text {
+  font-size: 18px;
+  color: #666;
+  font-weight: 600;
+}
+
+
+
+/* ######### FOOTER ######### */ 
+
+#footer {
+  display: block;
+  position: relative; 
+  margin:0px 0 0 0;
+  clear: both;
+}
+
+.menu-rodape-container { background-color: transparent }
+
+#footer .content_footer {
+  display: table;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+#footer #niveis {
+  padding: 10px 20px 10px 20px;
+  display: block
+}
+
+#footer .nivel1 { background-color: #36669f }
+
+#footer .nivel1 ul {
+  display: block;
+  text-align: center;
+}
+
+#footer .nivel1 ul li {
+  display: inline-table;
+  padding: 0 35px;
+}
+
+#footer .nivel1 ul li a {
+  font-size: 15px;
+  color: #757575;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#footer .nivel2 {
+  position: relative;
+  border-bottom: 2px solid #FFFFFF;
+  background-color: #36669f;
+}
+
+#footer .nivel2 .mapa {
+  width: 520px;
+  height: 328px;
+  top: -344px;
+  left: 58px;
+  visibility: hidden;
+  z-index: 3;
+  position: absolute;
+  padding: 42px 30px 0 35px;
+  background: url(../images/bg-mapa.png) no-repeat }
+
+  #footer .nivel2 .mapa iframe { padding: 0 }
+
+  #footer .nivel2 .mapa a.fechar-mapa {
+    width: 27px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    text-indent: -9000px;
+    cursor: pointer
+  }
+
+#footer .nivel2 .coll { display: inline-table;/*width: 430px;*//*float: left;*//*padding-top: 15px;*/ }
+
+#footer .nivel2 .bloco_enderecos { /*display: table;
+     float: right;
+     padding-left: 20px;*/ border-left: 1px solid #fff; }
+
+     #footer .nivel2 .enderecos {
+      position: relative;
+      padding: 0 25px 20px 0;
+      display: inline-table;
+    }
+
+    #footer .nivel2 .enderecos:last-child { padding-right: 0; }
+
+    #footer .nivel2 .enderecos p {
+      font-size: 14px;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    #footer .nivel2 .enderecos p a {
+      color: #FFFFFF;
+      padding: 0;
+      -webkit-transition: all ease .2s;
+      -moz-transition: all ease .2s;
+      transition: all ease .2s;
+    }
+
+    #footer .nivel2 .enderecos p a:hover { opacity: 0.5 }
+
+    #footer .nivel2 .enderecos p a.como-chegar { display: none; }
+
+    #footer .nivel2 .enderecos p span {
+      display: block;
+      padding: 5px 0 0 0;
+      color: #ffffff;
+      font-size: 14px;
+      line-height: 18px;  
+    }
+
+    @media (max-width:999px) {
+
+      #footer #niveis { padding: 0 0 10px 0 }
+
+      #footer .content_footer { width: 100%; }
+
+      #footer .nivel2 .coll .newsletter {
+        width: 55%;
+        margin-right: 20px
+      }
+
+      #footer .nivel2 .coll .rss { width: 35%; }
+
+      #footer .nivel2 .enderecos {
+        position: relative;
+        width: 48%;
+        padding: 10px 0 0px 0;
+      }
+
+      #footer .nivel2 .enderecos:last-child { width: 48%; }
+
+      #footer .nivel2 .bloco_enderecos { border-left: 0px solid transparent; } }
+
+      @media (max-width:767px) {
+
+        #footer .nivel2 .bloco_enderecos {
+          border-left: 0px solid transparent;
+          border-top: 3px solid #fff;
+          margin-top: 15px
+        }
+      }
+
+      #footer .nivel2 .menu-rodape li img{ margin-top:20px; 
+
+      }
+
+
+      #footer .nivel2 .menu-rodape ul {
+        margin: 0px 0 0 0;
+        padding: 0;
+        background-color: transparent;
+      }
+
+      #footer .nivel2 .menu-rodape li {
+        list-style: none;
+  padding: 2px 0 2px 0;/*width: 48%;
+  display: inline-block*/
+}
+
+#footer .nivel2 .menu-rodape li a {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 12px;
+  -webkit-transition: all ease .2s;
+  -moz-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+#footer .nivel2 .menu-rodape li a:hover {
+  opacity: 0.5;
+  background: none !important
+}
+
+@media (max-width:460px) {
+
+  #footer .nivel2 .enderecos {
+    position: relative;
+    width: 100%;
+    padding: 10px 0 0px 0;
+  }
+
+  #footer .nivel2 .enderecos:last-child { width: 100%; }
+
+  #footer .nivel2 .menu-rodape li {
+    list-style: none;
+    padding: 4px 0 4px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width:767px) {
+
+  #footer .nivel2 .menu-rodape li {
+    list-style: none;
+    padding: 4px 0 4px 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+#footer .nivel4 {
+  background-color: #1e4164;
+  text-align: center;
+}
+
+#footer .nivel4 p {
+  color: #FFFFFF;
+  display: inline;
+  font-size: 11px;
+}
+
+
+
+/*
+Back to top button 
+*/
+#scroll-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    margin: 0;
+    text-decoration: none;
+    z-index: 999999;
+}
+#scroll-top button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 100%;
+    border: solid 5px #FFEBEE;
+    background-color: #f8092d;
+    color: #ebe300;
+    box-shadow: 0 0 1px #333;
+    display: block;
+    font-family: tahoma;
+    font-size: 11px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#scroll-top button:hover {
+    background-color: #c8092d;
+    border-color: #ebe300;
+}
+
+
+
+/* ################
+
+RESPONSIVO
+
+################## */
+
+@media(min-width: 767px){
+  header {
+    height: 300px;
+    margin-top: 20px;
+    border-top: 10px solid #cc0000;
+    border-bottom: 10px solid #cc0000;
+  }
+
+} /*fim 767px*/
+
+
+@media(min-width: 992px){
+
+} /*fim 992px*/
+
+
+@media(min-width: 1200px){
+
+} /*fim 1200px*/
