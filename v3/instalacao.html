@@ -223,18 +223,63 @@ sua operadora te entrega?</h3>
 
            
 
-            <div class="mt-5 align-items-center text-center">
+<div class="mt-5 align-items-center text-center">
 
-              <span class="d-inline-block">
-                <a class="mx-3" href="https://play.google.com/store/apps/details?id=br.nic.monitorbandalarga" target="_blank"><img class="app-badge" src="assets/res/images/icone-android.png" alt="..."></a><br> <a href="assets/res/images/qr_code_android.jpg" title="" target="_blank">QR-Code</a>
-              </span>
-              <span class="d-inline-block">
-                <a class="mx-3" href="https://itunes.apple.com/us/app/monitor-banda-larga/id975657878?ls=1&mt=8" target="_blank"><img class="app-badge" src="assets/res/images/icone-appstore.png" alt="..." ></a><br> <a href="assets/res/images/qr_code_ios.jpg" title="" target="_blank">QR-Code</a>
-              </span>
+  <span class="d-inline-block">
+    <a class="mx-3" href="https://play.google.com/store/apps/details?id=br.nic.monitorbandalarga"
+      target="_blank">
+      <img class="app-badge" src="assets/res/images/icone-android.png" alt="..."></a><br>
+    <a href="assets/res/images/qr_code_android.jpg" data-toggle="modal"
+      data-target="#qr_code_android">QR-Code</a>
+  </span>
+  <span class="d-inline-block">
+    <a class="mx-3" href="https://itunes.apple.com/us/app/monitor-banda-larga/id975657878?ls=1&mt=8"
+      target="_blank">
+      <img class="app-badge" src="assets/res/images/icone-appstore.png" alt="..."></a><br>
+    <a href="#" data-toggle="modal" data-target="#qr_code_ios">QR-Code</a>
+  </span>
 
-              <p class="mt-4">Um aplicativo nativo para cada plataforma</p>
+  <p class="mt-4">Um aplicativo nativo para cada plataforma</p>
 
-            </div>
+  <!-- Modal -->
+  <div class="modal fade" id="qr_code_android" tabindex="-1" aria-labelledby="qr_code_androidLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="qr_code_androidLabel"> Sistema Operacional - <i
+              class="fa fa-android" aria-hidden="true"></i> </h5>
+        </div>
+        <div class="modal-body">
+          <img src="assets/res/images/qr_code_android.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- fim modal -->
+
+  <!-- Modal -->
+  <div class="modal fade" id="qr_code_ios" tabindex="-1" aria-labelledby="qr_code_iosLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="qr_code_iosLabel"> Sistema Operacional - <i class="fa fa-apple"
+              aria-hidden="true"></i> </h5>
+        </div>
+        <div class="modal-body">
+          <img src="assets/res/images/qr_code_ios.jpg" alt="" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div><!-- fim modal -->
+
+</div>
           </div>
         </div>
       </div>
